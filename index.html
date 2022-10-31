@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facilis ipsum nihil impedit maiores. Ex, quod corrupti quibusdam, quasi dignissimos fuga totam ipsum iure qui quaerat voluptatem dolorum aspernatur voluptatum?</p>
+    <header class="wrapper">
+        <nav>
+            <img class="header__logo" src="/img/logo.svg" alt="">
+            <ul class="header__list">
+                <li class="header__list-item"><a class="header__link" href="#">Features</a></li>
+                <li class="header__list-item"><a class="header__link" href="#">About</a></li>
+                <li class="header__list-item"><a class="header__link" href="#">Launch</a></li>
+                <li class="header__list-item"><a class="header__link" href="#">Sign up</a></li>
+            </ul>
+            <div class="header__menu">
+                <img src="/img/menu-icon.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <section class="hero">
+            <div class="hero__container">
+                <span class="hero__span">Launching Soon</span>
+                <h1 class="hero__title">An NFT like no other</h1>
+                <p class="hero__paragraph">Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
+                <button class="hero__btn">Sign up</button>
+            </div>
+            <div class="hero__image">
+                <img src="/img/graphic.svg" alt="">
+            </div>
+        </section>
+        <section class="color">
+            <h2 class="color-title">Free NFT for early birds</h2>
+            <p class="color-paragraph">Sign up today and you’ll get a free NFT when we launch.</p>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
