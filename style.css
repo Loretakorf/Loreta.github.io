@@ -117,6 +117,8 @@ nav {
 }
 .color__container {
     background-image: url(img/background.svg);
+    background-repeat: no-repeat;
+    background-position: cover;
     border-radius: 16px;
     min-height: 320px;
     display: flex;
