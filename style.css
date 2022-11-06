@@ -73,7 +73,7 @@ nav {
 }
 .hero::before {
     position: absolute;
-    content: url("/img/graphic.svg");
+    content: url("img/graphic.svg");
     top: -70px;
     right: 0;
     min-height: 580px;
@@ -132,9 +132,9 @@ nav {
     border-radius: 50px;
     inset: 0;
     background: linear-gradient(90deg,#FF3998, #FF8139, #39FFA0, #FF3939) border-box;
-    -webkit-mask: 
+    -webkit-mask:  
        linear-gradient(#fff 0 0) padding-box, 
-       linear-gradient(#fff 0 0);
+       linear-gradient(#fff 0 0); 
     -webkit-mask-composite: xor; 
     mask-composite: exclude; 
 }
