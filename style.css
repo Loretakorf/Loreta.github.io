@@ -110,17 +110,32 @@ nav {
     line-height: 150%;
 }
 .hero__btn {
-    padding: 22px 80px;
-    border: 2px solid orange;
+    padding: 22px 80px; 
+    border-radius: 50px;
+    border: 3px solid transparent; 
+    position: relative;
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;
     text-align: center;
-    color: #111111;
-    border-radius: 50px;
-    background-color: white;
+    color: #111111; 
+    background-color: white;  
     margin-top: 43px; 
     cursor: pointer;
+}
+.hero__btn::before {
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    padding: 22px 80px;
+    border-radius: 50px;
+    inset: 0;
+    background: linear-gradient(45deg,#FF3998, #FF8139, #39FFA0, #FF3939) border-box;
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) padding-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; 
+    mask-composite: exclude; 
 }
 .color {
    margin: 82px 90px;
