@@ -62,36 +62,40 @@ nav {
     width: 24px;
     height: 22px;
 }
-.hero,
+
 .hero__she {
     display: flex;
 }
 .hero {
     margin-top: 187px;
+    position: relative;
+    min-height: 580px;
+}
+.hero::after {
+    position: absolute;
+    content: url(/img/graphic.svg);
+    top: -70px;
+    right: 0;
+    min-height: 580px;
+    background: url(/img/graphic.svg) no-repeat;
 }
 .hero__container {
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    width: 50%;
 }
 .hero__she-container {
      flex: 1; 
 }
-.hero__image {
-    flex-basis: 50%;
-    position: relative;
-}
+
 .hero__she-image {
     flex: 1;
     position: relative;
 }
-.hero__image > img {
-    position: relative;
-    top: -90px;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    display: block; 
-} 
+
 .hero__span {
     color: #FF3998;
     text-transform: uppercase;
@@ -100,13 +104,11 @@ nav {
     line-height: 19px;
 }
 .hero__title {
-   margin-top: 34px;
    font-weight: 900;
    font-size: 96px;
    line-height: 116px;
 }
 .hero__paragraph {
-    margin-top: 32px; 
     line-height: 150%;
 }
 .hero__btn {
@@ -120,7 +122,6 @@ nav {
     text-align: center;
     color: #111111; 
     background-color: white;  
-    margin-top: 43px; 
     cursor: pointer;
 }
 .hero__btn::before {
@@ -130,7 +131,7 @@ nav {
     padding: 22px 80px;
     border-radius: 50px;
     inset: 0;
-    background: linear-gradient(45deg,#FF3998, #FF8139, #39FFA0, #FF3939) border-box;
+    background: linear-gradient(90deg,#FF3998, #FF8139, #39FFA0, #FF3939) border-box;
     -webkit-mask: 
        linear-gradient(#fff 0 0) padding-box, 
        linear-gradient(#fff 0 0);
@@ -138,7 +139,7 @@ nav {
     mask-composite: exclude; 
 }
 .color {
-   margin: 82px 90px;
+    margin: 120px 90px;
 }
 .color__container {
     background-image: url(img/background.svg);
@@ -263,17 +264,15 @@ nav {
     }
     .hero {
         margin-top: 100px;
+        min-height: 280px;
     }
-    .hero__container,
+    .hero::after  {
+        right: -400px; 
+        top: -150px;
+        min-height: 280px;
+    }
     .hero__she-container {
         flex: 2;
-    }
-    .hero__img {
-        flex: 1;
-    } 
-    .hero__image > img {
-        left: 90px;
-        top: -90px;
     }
     .hero__title {
         font-weight: 900;
