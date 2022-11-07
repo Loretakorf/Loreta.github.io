@@ -184,7 +184,6 @@ nav {
 .cards__grid-img {
     border-radius: 20px;
     background-color: #EEEEEE;
-   
 }
 .cards__grid-img > img {
     width: 100%;
@@ -312,7 +311,10 @@ nav {
         display: none;
     }
     .cards__grid  {
-        grid-template-columns: 1fr;
+        overflow: scroll;
+    }
+    .cards__grid-img {
+        width: 290px;
     }
     .hero__she-image > img {
         right: -50px;
