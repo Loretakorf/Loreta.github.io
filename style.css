@@ -302,6 +302,9 @@ nav {
         flex: 2;
         margin-left: 32px;
     }
+    .hero__she-image {
+        margin-right: 32px;
+    }
     .hero__title {
         font-weight: 900;
         font-size: 48px;
